@@ -129,7 +129,7 @@ const SignUpPage: FunctionComponent = () => {
               </div>
               <SocialMediaLogin
                 orSignUpWith="Or sign up with"
-                image="/image@2x.png"
+                image="/image1@2x.png"
                 image1="/image-15@2x.png"
                 image2="/image-21@2x.png"
               />

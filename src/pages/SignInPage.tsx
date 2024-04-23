@@ -7,8 +7,8 @@ const SignInPage: FunctionComponent = () => {
   return (
     <div className={styles.signInPage}>
       <Header
-        notifications="/notifications@2x.png"
-        avatar="/avatar@2x.png"
+        notifications="/notifications1@2x.png"
+        avatar="/avatar1@2x.png"
         showLoginSection={false}
       />
       <main className={styles.loginSections}>

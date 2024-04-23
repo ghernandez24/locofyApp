@@ -86,7 +86,7 @@ const Form: FunctionComponent = () => {
       <div className={styles.formChild} />
       <SocialMediaLogin
         orSignUpWith="Or sign in with"
-        image="/image1@2x.png"
+        image="/image11@2x.png"
         image1="/image-16@2x.png"
         image2="/image-22@2x.png"
       />
