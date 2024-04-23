@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { useState } from "react";
 import {
   TextField,
   InputAdornment,
@@ -10,7 +10,7 @@ import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import styles from "./HeroContainer.module.css";
 
-const HeroContainer: FunctionComponent = () => {
+const HeroContainer = () => {
   const [frameDateTimePickerValue, setFrameDateTimePickerValue] =
     useState(null);
   const [datesFieldDateTimePickerValue, setDatesFieldDateTimePickerValue] =
@@ -56,7 +56,7 @@ const HeroContainer: FunctionComponent = () => {
                 <div className={styles.wrapper}>
                   <DatePicker
                     value={frameDateTimePickerValue}
-                    onChange={(newValue: any) => {
+                    onChange={(newValue) => {
                       setFrameDateTimePickerValue(newValue);
                     }}
                     sx={{
@@ -114,7 +114,7 @@ const HeroContainer: FunctionComponent = () => {
                 <div className={styles.datesField}>
                   <DatePicker
                     value={datesFieldDateTimePickerValue}
-                    onChange={(newValue: any) => {
+                    onChange={(newValue) => {
                       setDatesFieldDateTimePickerValue(newValue);
                     }}
                     sx={{

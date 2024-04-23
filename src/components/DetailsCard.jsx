@@ -1,19 +1,7 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./DetailsCard.module.css";
 
-export type DetailsCardType = {
-  amenityCardRows?: string;
-  dedicatedWorkspace?: string;
-  aPrivateRoomEquippedWithW?: string;
-
-  /** Style props */
-  propDisplay?: CSSProperties["display"];
-  propMinWidth?: CSSProperties["minWidth"];
-  propDisplay1?: CSSProperties["display"];
-  propMinWidth1?: CSSProperties["minWidth"];
-};
-
-const DetailsCard: FunctionComponent<DetailsCardType> = ({
+const DetailsCard = ({
   amenityCardRows,
   dedicatedWorkspace,
   aPrivateRoomEquippedWithW,
@@ -22,14 +10,14 @@ const DetailsCard: FunctionComponent<DetailsCardType> = ({
   propDisplay1,
   propMinWidth1,
 }) => {
-  const dedicatedWorkspaceStyle: CSSProperties = useMemo(() => {
+  const dedicatedWorkspaceStyle = useMemo(() => {
     return {
       display: propDisplay,
       minWidth: propMinWidth,
     };
   }, [propDisplay, propMinWidth]);
 
-  const aPrivateRoomStyle: CSSProperties = useMemo(() => {
+  const aPrivateRoomStyle = useMemo(() => {
     return {
       display: propDisplay1,
       minWidth: propMinWidth1,

@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { useCallback } from "react";
 import { Button } from "@mui/material";
 import Header from "../components/Header";
 import HeroContainer from "../components/HeroContainer";
@@ -7,7 +7,7 @@ import CardList from "../components/CardList";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
 
-const Homepage: FunctionComponent = () => {
+const Homepage = () => {
   const onShowMoreButtonClick = useCallback(() => {
     //TODO: Please show more list items onclick of this button
   }, []);

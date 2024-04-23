@@ -1,17 +1,6 @@
-import { FunctionComponent } from "react";
 import styles from "./Header.module.css";
 
-export type HeaderType = {
-  notifications?: string;
-  avatar?: string;
-  showLoginSection?: boolean;
-};
-
-const Header: FunctionComponent<HeaderType> = ({
-  notifications,
-  avatar,
-  showLoginSection,
-}) => {
+const Header = ({ notifications, avatar, showLoginSection }) => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>

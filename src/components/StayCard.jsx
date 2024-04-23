@@ -1,20 +1,12 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./StayCard.module.css";
 
-export type StayCardType = {
-  brightwoodsEstate?: string;
-  bridlepathOntarioCanada?: string;
-
-  /** Style props */
-  propBackgroundImage?: CSSProperties["backgroundImage"];
-};
-
-const StayCard: FunctionComponent<StayCardType> = ({
+const StayCard = ({
   brightwoodsEstate,
   bridlepathOntarioCanada,
   propBackgroundImage,
 }) => {
-  const favoriteIconStyle: CSSProperties = useMemo(() => {
+  const favoriteIconStyle = useMemo(() => {
     return {
       backgroundImage: propBackgroundImage,
     };

@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 import styles from "./LocationAmenities.module.css";
 
-const LocationAmenities: FunctionComponent = () => {
+const LocationAmenities = () => {
   return (
     <div className={styles.locationAmenities}>
       <div className={styles.amenitiesParent}>

@@ -1,7 +1,6 @@
-import { FunctionComponent } from "react";
 import styles from "./SearchSectionHeader.module.css";
 
-const SearchSectionHeader: FunctionComponent = () => {
+const SearchSectionHeader = () => {
   return (
     <div className={styles.searchSectionHeader}>
       <div className={styles.locationDisplay}>

@@ -1,9 +1,8 @@
-import { FunctionComponent } from "react";
 import Header from "../components/Header";
 import Form from "../components/Form";
 import styles from "./SignInPage.module.css";
 
-const SignInPage: FunctionComponent = () => {
+const SignInPage = () => {
   return (
     <div className={styles.signInPage}>
       <Header

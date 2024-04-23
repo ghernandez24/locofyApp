@@ -1,31 +1,20 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./Footer.module.css";
 
-export type FooterType = {
-  /** Style props */
-  propMargin?: CSSProperties["margin"];
-  propMargin1?: CSSProperties["margin"];
-  propMargin2?: CSSProperties["margin"];
-};
-
-const Footer: FunctionComponent<FooterType> = ({
-  propMargin,
-  propMargin1,
-  propMargin2,
-}) => {
-  const supportStyle: CSSProperties = useMemo(() => {
+const Footer = ({ propMargin, propMargin1, propMargin2 }) => {
+  const supportStyle = useMemo(() => {
     return {
       margin: propMargin,
     };
   }, [propMargin]);
 
-  const hostingStyle: CSSProperties = useMemo(() => {
+  const hostingStyle = useMemo(() => {
     return {
       margin: propMargin1,
     };
   }, [propMargin1]);
 
-  const localhostStyle: CSSProperties = useMemo(() => {
+  const localhostStyle = useMemo(() => {
     return {
       margin: propMargin2,
     };

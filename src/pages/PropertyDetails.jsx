@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import Header from "../components/Header";
 import ContentWrapper from "../components/ContentWrapper";
 import ListingDescription from "../components/ListingDescription";
@@ -8,7 +7,7 @@ import SimilarStaysSection from "../components/SimilarStaysSection";
 import Footer from "../components/Footer";
 import styles from "./PropertyDetails.module.css";
 
-const PropertyDetails: FunctionComponent = () => {
+const PropertyDetails = () => {
   return (
     <div className={styles.propertyDetails}>
       <Header

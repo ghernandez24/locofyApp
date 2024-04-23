@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import DetailsCard from "./DetailsCard";
 import styles from "./ListingDescription.module.css";
 
-const ListingDescription: FunctionComponent = () => {
+const ListingDescription = () => {
   return (
     <div className={styles.listingDescription}>
       <h3 className={styles.aboutThisHome}>About this home</h3>

@@ -1,46 +1,11 @@
-import { FunctionComponent, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ListingItem from "./ListingItem";
 import styles from "./CardList.module.css";
-type CardStateType = Array<
-  | {
-      listingImage: string;
-      listingTitle: string;
-      listingSubtitle: string;
-      rating: string;
-      price: string;
-      showBestTime: boolean;
-      superhostIcon: string;
-      heartIcon: string;
-      starIcon: string;
-      trendIcon: string;
-    }
-  | {
-      listingImage: string;
-      listingTitle: string;
-      listingSubtitle: string;
-      rating: string;
-      price: string;
-      showBestTime: boolean;
-      propDisplay: string;
-      propMinWidth: string;
-      propDisplay1: string;
-      propMinWidth1: string;
-      propPadding: string;
-      propFlex: string;
-      propDisplay2: string;
-      propMinWidth2: string;
-      superhostIcon: string;
-      heartIcon: string;
-      starIcon: string;
-      trendIcon: string;
-      listingItemFlex: string;
-    }
->;
 
-const CardList: FunctionComponent = () => {
+const CardList = () => {
   const navigate = useNavigate();
-  const [cardState, setCardState] = useState<CardStateType>([
+  const [cardState, setCardState] = useState([
     {
       listingImage: "/listing-image@2x.png",
       listingTitle: "Brightwoods Cabin",

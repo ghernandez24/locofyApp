@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 import styles from "./ContentWrapper.module.css";
 
-const ContentWrapper: FunctionComponent = () => {
+const ContentWrapper = () => {
   return (
     <section className={styles.contentWrapper}>
       <div className={styles.visualsParent}>

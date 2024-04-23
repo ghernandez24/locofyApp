@@ -1,34 +1,7 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./ListingItem.module.css";
 
-export type ListingItemType = {
-  listingImage?: string;
-  listingTitle?: string;
-  listingSubtitle?: string;
-  rating?: string;
-  price?: string;
-  showBestTime?: boolean;
-  superhostIcon?: string;
-  heartIcon?: string;
-  starIcon?: string;
-  trendIcon?: string;
-
-  /** Style props */
-  propDisplay?: CSSProperties["display"];
-  propMinWidth?: CSSProperties["minWidth"];
-  propDisplay1?: CSSProperties["display"];
-  propMinWidth1?: CSSProperties["minWidth"];
-  propPadding?: CSSProperties["padding"];
-  propFlex?: CSSProperties["flex"];
-  propDisplay2?: CSSProperties["display"];
-  propMinWidth2?: CSSProperties["minWidth"];
-  listingItemFlex?: CSSProperties["flex"];
-
-  /** Action props */
-  onListingItemContainerClick?: () => void;
-};
-
-const ListingItem: FunctionComponent<ListingItemType> = ({
+const ListingItem = ({
   listingImage,
   listingTitle,
   listingSubtitle,
@@ -50,40 +23,40 @@ const ListingItem: FunctionComponent<ListingItemType> = ({
   trendIcon,
   listingItemFlex,
 }) => {
-  const listingTitleStyle: CSSProperties = useMemo(() => {
+  const listingTitleStyle = useMemo(() => {
     return {
       display: propDisplay,
       minWidth: propMinWidth,
     };
   }, [propDisplay, propMinWidth]);
 
-  const listingSubtitleStyle: CSSProperties = useMemo(() => {
+  const listingSubtitleStyle = useMemo(() => {
     return {
       display: propDisplay1,
       minWidth: propMinWidth1,
     };
   }, [propDisplay1, propMinWidth1]);
 
-  const bottomContainerStyle: CSSProperties = useMemo(() => {
+  const bottomContainerStyle = useMemo(() => {
     return {
       padding: propPadding,
     };
   }, [propPadding]);
 
-  const pricePerNightStyle: CSSProperties = useMemo(() => {
+  const pricePerNightStyle = useMemo(() => {
     return {
       flex: propFlex,
     };
   }, [propFlex]);
 
-  const priceChartStyle: CSSProperties = useMemo(() => {
+  const priceChartStyle = useMemo(() => {
     return {
       display: propDisplay2,
       minWidth: propMinWidth2,
     };
   }, [propDisplay2, propMinWidth2]);
 
-  const listingItemStyle: CSSProperties = useMemo(() => {
+  const listingItemStyle = useMemo(() => {
     return {
       flex: listingItemFlex,
     };

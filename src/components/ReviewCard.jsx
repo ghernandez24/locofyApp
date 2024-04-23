@@ -1,19 +1,7 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./ReviewCard.module.css";
 
-export type ReviewCardType = {
-  avatars?: string;
-  johnnyCash?: string;
-  june2023?: string;
-  stars?: string;
-  michellesPlaceWasSoGreatA?: string;
-
-  /** Style props */
-  propMinWidth?: CSSProperties["minWidth"];
-  propMinWidth1?: CSSProperties["minWidth"];
-};
-
-const ReviewCard: FunctionComponent<ReviewCardType> = ({
+const ReviewCard = ({
   avatars,
   johnnyCash,
   june2023,
@@ -22,13 +10,13 @@ const ReviewCard: FunctionComponent<ReviewCardType> = ({
   propMinWidth,
   propMinWidth1,
 }) => {
-  const johnnyCashStyle: CSSProperties = useMemo(() => {
+  const johnnyCashStyle = useMemo(() => {
     return {
       minWidth: propMinWidth,
     };
   }, [propMinWidth]);
 
-  const june2023Style: CSSProperties = useMemo(() => {
+  const june2023Style = useMemo(() => {
     return {
       minWidth: propMinWidth1,
     };

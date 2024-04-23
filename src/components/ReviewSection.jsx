@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import ReviewCard from "./ReviewCard";
 import styles from "./ReviewSection.module.css";
 
-const ReviewSection: FunctionComponent = () => {
+const ReviewSection = () => {
   return (
     <section className={styles.reviewSection}>
       <div className={styles.reviewsHeader}>

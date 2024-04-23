@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { useCallback } from "react";
 import {
   TextField,
   InputAdornment,
@@ -10,7 +10,7 @@ import SocialMediaLogin from "./SocialMediaLogin";
 import { useNavigate } from "react-router-dom";
 import styles from "./Form.module.css";
 
-const Form: FunctionComponent = () => {
+const Form = () => {
   const navigate = useNavigate();
 
   const onDontHaveAnClick = useCallback(() => {

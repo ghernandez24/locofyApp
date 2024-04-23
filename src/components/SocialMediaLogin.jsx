@@ -1,19 +1,6 @@
-import { FunctionComponent } from "react";
 import styles from "./SocialMediaLogin.module.css";
 
-export type SocialMediaLoginType = {
-  orSignUpWith?: string;
-  image?: string;
-  image1?: string;
-  image2?: string;
-};
-
-const SocialMediaLogin: FunctionComponent<SocialMediaLoginType> = ({
-  orSignUpWith,
-  image,
-  image1,
-  image2,
-}) => {
+const SocialMediaLogin = ({ orSignUpWith, image, image1, image2 }) => {
   return (
     <div className={styles.socialMediaLogin}>
       <div className={styles.orSignUp}>{orSignUpWith}</div>

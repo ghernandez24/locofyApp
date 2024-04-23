@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import StayCard from "./StayCard";
 import styles from "./SimilarStaysSection.module.css";
 
-const SimilarStaysSection: FunctionComponent = () => {
+const SimilarStaysSection = () => {
   return (
     <section className={styles.similarStaysSection}>
       <div className={styles.similarStaysHeader}>

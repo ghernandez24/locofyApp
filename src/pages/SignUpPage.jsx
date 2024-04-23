@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import { useCallback } from "react";
 import {
   TextField,
   InputAdornment,
@@ -11,7 +11,7 @@ import SocialMediaLogin from "../components/SocialMediaLogin";
 import { useNavigate } from "react-router-dom";
 import styles from "./SignUpPage.module.css";
 
-const SignUpPage: FunctionComponent = () => {
+const SignUpPage = () => {
   const navigate = useNavigate();
 
   const onIAlreadyHaveClick = useCallback(() => {
